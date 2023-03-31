@@ -1,0 +1,103 @@
+{
+    "criteria": {
+        "system": [
+            {
+                "group": "system",
+                "checkType": "compile",
+                "checkName": "Compilation",
+                "visible": "eval",
+                "score": "1",
+                "penalty": "0",
+                "rule": {
+                    "warnings_ignore": [],
+                    "deprecation_ignore": []
+                }
+            }
+        ],
+        "blackboxtests": [
+            {
+                "checkName": "T1",
+                "checkType": "BlackBoxTest",
+                "include": "true",
+                "ignoreCase": "true",
+                "ignoreWhiteSpace": "true",
+                "group": "blackboxtests",
+                "visible": "all",
+                "penalty": "",
+                "rule": {
+                    "input": "3\n5",
+                    "cliInput": "",
+                    "output": "6",
+                    "type": "STDIN"
+                },
+                "score": ""
+            },
+            {
+                "checkName": "T2",
+                "checkType": "BlackBoxTest",
+                "include": "true",
+                "ignoreCase": "true",
+                "ignoreWhiteSpace": "true",
+                "group": "blackboxtests",
+                "visible": "all",
+                "penalty": "",
+                "rule": {
+                    "input": "4\n4",
+                    "cliInput": "",
+                    "output": "8",
+                    "type": "STDIN"
+                },
+                "score": ""
+            }
+        ],
+        "unittests": [],
+        "evalblackboxtests": [
+            {
+                "checkName": "T1",
+                "checkType": "BlackBoxTest",
+                "include": "true",
+                "ignoreCase": "true",
+                "ignoreWhiteSpace": "true",
+                "group": "evalblackboxtests",
+                "visible": "eval",
+                "penalty": "",
+                "rule": {
+                    "input": "5\n5",
+                    "cliInput": "",
+                    "output": "10",
+                    "type": "STDIN"
+                },
+                "score": ""
+            },
+            {
+                "checkName": "T2",
+                "checkType": "BlackBoxTest",
+                "include": "true",
+                "ignoreCase": "true",
+                "ignoreWhiteSpace": "true",
+                "group": "evalblackboxtests",
+                "visible": "eval",
+                "penalty": "",
+                "rule": {
+                    "input": "6\n6",
+                    "cliInput": "",
+                    "output": "12",
+                    "type": "STDIN"
+                },
+                "score": ""
+            }
+        ],
+        "evalunittests": []
+    },
+    "weightage": {
+        "system": 5,
+        "evalblackboxtests": 5,
+        "blackboxtests": 5,
+        "maxScore": 15
+    },
+    "lastSaved": "20230322 171526",
+    "codeMetrics": "false",
+    "autoIntelligence": "false",
+    "resultVisibility": "false",
+    "rubric_type": "archetype"
+}
